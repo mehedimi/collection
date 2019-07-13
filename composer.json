@@ -1,0 +1,16 @@
+{
+    "name": "mehedimi/collection",
+    "description": "This is a simple collection class",
+    "authors": [
+        {
+            "name": "Mehedi Hasan",
+            "email": "mehedihasansabbirmi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mehedi\\": "src/"
+        }
+    }
+}
