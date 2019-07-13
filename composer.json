@@ -1,6 +1,7 @@
 {
     "name": "mehedimi/collection",
-    "description": "This is a simple collection class",
+    "description": "This is a simple array wrapper.",
+    "keywords": ["array", "collection", "helpers"],
     "authors": [
         {
             "name": "Mehedi Hasan",
