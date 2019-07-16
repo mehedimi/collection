@@ -77,4 +77,40 @@ class CollectionTest extends TestCase
         $this->assertEquals([1, 2], $c->all());
     }
 
+    /**
+     * @test
+     */
+    function it_can_merge_new_array()
+    {
+        $c = new Collection([2, 3]);
+
+        $c->merge([4, 5]);
+
+        $this->assertEquals([2, 3, 4, 5], $c->all());
+    }
+
+    /**
+     * @test
+     */
+    function it_can_merge_collection_instance()
+    {
+        $cOne = new Collection([2, 3]);
+
+        $cTwo = new Collection([4, 5]);
+
+        $cOne->merge($cTwo);
+
+        $this->assertEquals([2, 3, 4, 5], $cOne->all());
+    }
+
+    /**
+     * @test
+     */
+    function it_return_json_format()
+    {
+        $cOne = new Collection([2, 3]);
+
+        $this->assertJson($cOne->toJSON());
+    }
+
 }

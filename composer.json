@@ -11,7 +11,8 @@
     "minimum-stability": "stable",
     "license": ["MIT"],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
